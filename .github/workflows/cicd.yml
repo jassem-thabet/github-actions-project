@@ -62,7 +62,7 @@ jobs:
 
   Test:
       runs-on: self-hosted
-      needs: compile
+      needs: security-check
       steps:
           - name: Checkout code
             uses: actions/checkout@v4
